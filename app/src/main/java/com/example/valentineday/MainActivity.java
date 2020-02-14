@@ -151,5 +151,12 @@ public class MainActivity extends AppCompatActivity {
         MyCustomDialog.show();
     }
 
-
+    public void runAnimation()
+    {
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.text_appear);
+        a.reset();
+        TextView tv = (TextView) findViewById(R.id.text);
+        tv.clearAnimation();
+        tv.startAnimation(a);
+    }
 }
