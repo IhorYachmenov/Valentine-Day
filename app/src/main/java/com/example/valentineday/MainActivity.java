@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AudioManager mAudioManager;
     private MediaPlayer mMediaPlayer;
+    private Animation pulse;
     Dialog MyCustomDialog;
 
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Animation pulse = AnimationUtils.loadAnimation(this, R.anim.heart_pulse);
+        pulse = AnimationUtils.loadAnimation(this, R.anim.heart_pulse);
         heart.startAnimation(pulse);
 
         heart.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
                     text.setVisibility(View.VISIBLE);
                     pulseView.setVisibility(View.INVISIBLE);
                     chest.setVisibility(View.INVISIBLE);
+                    chest.clearAnimation();
+
 
                     Toast.makeText(MainActivity.this, ("\ud83d\ude18"), Toast.LENGTH_SHORT).show();
 
@@ -88,10 +91,13 @@ public class MainActivity extends AppCompatActivity {
 
                     pulseView.startPulse();
                     mMediaPlayer.start();
+                    chest.startAnimation(pulse);
+
 
 
                     Toast.makeText(MainActivity.this, "Enjoy", Toast.LENGTH_SHORT).show();
                 }
+
 
                 mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
                 final int originalVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
