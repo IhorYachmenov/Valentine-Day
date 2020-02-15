@@ -26,14 +26,15 @@ celebrating this beautiful time
 I want see you smile always, Ihor!"
             android:textColor="#000000 "
             android:padding="40dp"
+            android:textSize="40px"
             android:gravity="center_horizontal"
             android:textAlignment="center"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/song"
-            android:layout_width="200px"
-            android:layout_height="200px"
+            android:layout_width="100px"
+            android:layout_height="100px"
             android:src="@drawable/note"
             android:layout_gravity="center"
             android:textColor="#000000"/>
@@ -43,8 +44,8 @@ I want see you smile always, Ihor!"
 
     <ImageView
         android:id="@+id/chest"
-        android:layout_width="300px"
-        android:layout_height="300px"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:src="@drawable/chest"
         android:visibility="invisible"
         android:layout_alignParentTop="true"

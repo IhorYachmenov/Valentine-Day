@@ -6,16 +6,18 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="You have one desire ;)"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/close"
+        android:layout_gravity="center_vertical"
         android:layout_margin="30dp"
         android:layout_width="250dp"
         android:layout_height="150dp"
