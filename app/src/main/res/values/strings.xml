@@ -2,4 +2,6 @@
     <string name="app_name">Happy Valentine Day</string>
     <string name="recipient">Dear Anetta</string>
     <string name="sender">From Ihor</string>
+    <string name="congratulation_text">Your text</string>
+    <string name="desire_text">You have one desire ;)</string>
 </resources>

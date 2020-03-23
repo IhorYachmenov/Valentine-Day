@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="You have one desire ;)"
+        android:text="@string/desire_text"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"/>
