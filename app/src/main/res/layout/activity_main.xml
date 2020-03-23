@@ -15,15 +15,9 @@
 
         <TextView
             android:id="@+id/text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dear Anetta, Let's dance
- together tonight
- I am so happy to be
-seeing you and
-celebrating this beautiful time
- with you.
-I want see you smile always, Ihor!"
+            android:text="@string/congratulation_text"
             android:textColor="#000000 "
             android:padding="40dp"
             android:textSize="40px"
@@ -35,6 +29,7 @@ I want see you smile always, Ihor!"
             android:id="@+id/song"
             android:layout_width="100px"
             android:layout_height="100px"
+
             android:src="@drawable/note"
             android:layout_gravity="center"
             android:textColor="#000000"/>
